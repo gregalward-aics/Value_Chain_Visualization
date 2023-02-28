@@ -159,15 +159,90 @@ a_{11} &amp; a_{12} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
     x = Zf &amp;&amp; \text{(Z relates industry input vectors to final products)}\\
 \end{align}
 \]</span></p>
-<section id="column-space-expansion-of-total-output-vector" class="level3">
-<h3 class="anchored" data-anchor-id="column-space-expansion-of-total-output-vector">3.1 Column Space Expansion of Total Output Vector</h3>
-<p>Column space expansion of total output vector x:</p>
+<section id="standard-leontief-i-o-accounting-identity" class="level3">
+<h3 class="anchored" data-anchor-id="standard-leontief-i-o-accounting-identity">3.1 Standard Leontief I-O Accounting Identity</h3>
+<p>Equation:</p>
 <p><span class="math display">\[
 \begin{align}
     x = Zf &amp;&amp; \text{(Leontief transformation function)}\\
+\end{align}
+\]</span></p>
+<p>Where: Vector x:</p>
+<p><span class="math display">\[\mathbf{x} = \left[\begin{array}
+{rrr}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4} \\
+x_{5} \\
+x_{6} \\
+\end{array}\right]
+\]</span></p>
+<p>Vector f:</p>
+<p><span class="math display">\[\mathbf{f} = \left[\begin{array}
+{rrr}
+f_{1} \\
+f_{2} \\
+f_{3} \\
+f_{4} \\
+f_{5} \\
+f_{6} \\
+\end{array}\right]
+\]</span></p>
+<p>Matrix Z:</p>
+<p><span class="math display">\[\mathbf{Z} = \left[\begin{array}
+{rrr}
+z_{11} &amp; z_{12} &amp; z_{13} &amp; z_{14} &amp; z_{15} &amp; z_{16} \\
+z_{21} &amp; z_{22} &amp; z_{23} &amp; z_{24} &amp; z_{25} &amp; z_{26} \\
+z_{31} &amp; z_{32} &amp; z_{33} &amp; z_{34} &amp; z_{35} &amp; z_{36} \\
+z_{41} &amp; z_{42} &amp; z_{43} &amp; z_{44} &amp; z_{45} &amp; z_{46} \\
+z_{51} &amp; z_{52} &amp; z_{53} &amp; z_{54} &amp; z_{55} &amp; z_{56} \\
+z_{61} &amp; z_{62} &amp; z_{63} &amp; z_{64} &amp; z_{65} &amp; z_{66} \\
+\end{array}\right]
+\]</span></p>
+</section>
+<section id="column-space-expansion-of-leontief-i-o-total-output-vector-x" class="level3">
+<h3 class="anchored" data-anchor-id="column-space-expansion-of-leontief-i-o-total-output-vector-x">3.2 Column space expansion of Leontief I-O total output vector x:</h3>
+<p>Equation:</p>
+<p><span class="math display">\[
+\begin{align}
     O = Z\hat{f} &amp;&amp; \text{(f-hat is a diagonal matrix of final demands; O is the column space of x)}\\
 \end{align}\]</span></p>
-<p>Matrix O: <span class="math display">\[\mathbf{O} = \left[\begin{array}
+<p>Where: Vector f-hat:</p>
+<p><span class="math display">\[\mathbf {f} = \left[\begin{array}
+{rrr}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4} \\
+x_{5} \\
+x_{6} \\
+\end{array}\right]
+\]</span></p>
+<p>Vector f:</p>
+<p><span class="math display">\[\mathbf{f} = \left[\begin{array}
+{rrr}
+f_{11} &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; f_{22} &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; f_{33} &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; f_{44} &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; f_{55} &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; f_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Matrix Z:</p>
+<p><span class="math display">\[\mathbf{Z} = \left[\begin{array}
+{rrr}
+z_{11} &amp; z_{12} &amp; z_{13} &amp; z_{14} &amp; z_{15} &amp; z_{16} \\
+z_{21} &amp; z_{22} &amp; z_{23} &amp; z_{24} &amp; z_{25} &amp; z_{26} \\
+z_{31} &amp; z_{32} &amp; z_{33} &amp; z_{34} &amp; z_{35} &amp; z_{36} \\
+z_{41} &amp; z_{42} &amp; z_{43} &amp; z_{44} &amp; z_{45} &amp; z_{46} \\
+z_{51} &amp; z_{52} &amp; z_{53} &amp; z_{54} &amp; z_{55} &amp; z_{56} \\
+z_{61} &amp; z_{62} &amp; z_{63} &amp; z_{64} &amp; z_{65} &amp; z_{66} \\
+\end{array}\right]
+\]</span></p>
+<p>Column-space expansion Matrix O:</p>
+<p><span class="math display">\[\mathbf{O} = \left[\begin{array}
 {rrr}
 o_{11} &amp; o_{12} &amp; o_{13} &amp; o_{14} &amp; o_{15} &amp; o_{16} \\
 o_{21} &amp; o_{22} &amp; o_{23} &amp; o_{24} &amp; o_{25} &amp; o_{26} \\
@@ -178,10 +253,18 @@ o_{61} &amp; o_{62} &amp; o_{63} &amp; o_{64} &amp; o_{65} &amp; o_{66} \\
 \end{array}\right]
 \]</span></p>
 </section>
-<section id="column-space-expansion-of-total-output-vector-o5" class="level3">
-<h3 class="anchored" data-anchor-id="column-space-expansion-of-total-output-vector-o5">3.1 Column Space Expansion of Total Output Vector o<sub>5</sub></h3>
-<p>Vector o<sub>5</sub>:</p>
-<p><span class="math display">\[\mathbf{o} = \left[\begin{array}
+<section id="supply-chain-tier-1-column-space-expansion-of-total-output-of-vector-o5" class="level3">
+<h3 class="anchored" data-anchor-id="supply-chain-tier-1-column-space-expansion-of-total-output-of-vector-o5">3.3 Supply Chain Tier 1 Column Space Expansion of Total Output of Vector o<sub>5</sub></h3>
+<p><strong><em>SECTION 3.3 TBD!!!!</em></strong></p>
+<p>Column space expansion of output vector o<sub>5</sub>:</p>
+<p><span class="math display">\[
+\begin{align}
+    o = Zf &amp;&amp; \text{(Leontief transformation function)}\\
+    O = Z\hat{f} &amp;&amp; \text{(f-hat is a diagonal matrix of intermediate demands by Biopwr; O is the column space of o)}\\
+\end{align}
+\]</span></p>
+<p>(Product Electricity from Biomass Power Generation) Vector o<sub>5</sub>:</p>
+<p><span class="math display">\[\mathbf{o_5} = \left[\begin{array}
 {rrr}
 o_{15} \\
 o_{25} \\
@@ -198,7 +281,8 @@ o_{65} \\
     O = Z\hat{f} &amp;&amp; \text{(f-hat is a diagonal matrix of intermediate demands by Biopwr; O is the column space of o)}\\
 \end{align}
 \]</span></p>
-<p>Matrix O: <span class="math display">\[\mathbf{O} = \left[\begin{array}
+<p>Matrix O:</p>
+<p><span class="math display">\[\mathbf{O} = \left[\begin{array}
 {rrr}
 o_{11} &amp; o_{12} &amp; o_{13} &amp; o_{14} &amp; o_{15} &amp; o_{16} \\
 o_{21} &amp; o_{22} &amp; o_{23} &amp; o_{24} &amp; o_{25} &amp; o_{26} \\
@@ -208,6 +292,27 @@ o_{51} &amp; o_{52} &amp; o_{53} &amp; o_{54} &amp; o_{55} &amp; o_{56} \\
 o_{61} &amp; o_{62} &amp; o_{63} &amp; o_{64} &amp; o_{65} &amp; o_{66} \\
 \end{array}\right]
 \]</span></p>
+</section>
+<section id="supply-chain-tier-2-column-space-expansion-of-total-output-of-vector-o4" class="level3">
+<h3 class="anchored" data-anchor-id="supply-chain-tier-2-column-space-expansion-of-total-output-of-vector-o4">3.4 Supply Chain Tier 2 Column Space Expansion of Total Output of Vector o<sub>4</sub></h3>
+</section>
+<section id="supply-chain-tier-3-column-space-expansion-of-total-output-of-vector-o3" class="level3">
+<h3 class="anchored" data-anchor-id="supply-chain-tier-3-column-space-expansion-of-total-output-of-vector-o3">3.5 Supply Chain Tier 3 Column Space Expansion of Total Output of Vector o<sub>3</sub></h3>
+</section>
+<section id="supply-chain-tier-4-column-space-expansion-of-total-output-of-vector-o2" class="level3">
+<h3 class="anchored" data-anchor-id="supply-chain-tier-4-column-space-expansion-of-total-output-of-vector-o2">3.6 Supply Chain Tier 4 Column Space Expansion of Total Output of Vector o<sub>2</sub></h3>
+</section>
+</section>
+<section id="supply-chain-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="supply-chain-visualization">4. Supply Chain Visualization</h2>
+<section id="assemble-a-supply-chain-knowlegebase" class="level3">
+<h3 class="anchored" data-anchor-id="assemble-a-supply-chain-knowlegebase">4.1 Assemble a Supply Chain Knowlegebase</h3>
+</section>
+<section id="query-knowlegebase-for-supply-chain-pattern" class="level3">
+<h3 class="anchored" data-anchor-id="query-knowlegebase-for-supply-chain-pattern">4.2 Query Knowlegebase for Supply Chain Pattern</h3>
+</section>
+<section id="visualization-of-supply-chain" class="level3">
+<h3 class="anchored" data-anchor-id="visualization-of-supply-chain">4.3 Visualization of Supply Chain</h3>
 </section>
 </section>
 </section>

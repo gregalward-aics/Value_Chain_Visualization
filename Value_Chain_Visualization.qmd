@@ -111,17 +111,106 @@ $$
 \end{align}
 $$
 
-### 3.1 Column Space Expansion of Total Output Vector
+### 3.1 Standard Leontief I-O Accounting Identity
 
-Column space expansion of total output vector x:
+Equation:
 
 $$
 \begin{align}
     x = Zf && \text{(Leontief transformation function)}\\
+\end{align}
+$$
+
+Where: Vector x:
+
+$$\mathbf{x} = \left[\begin{array}
+{rrr}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4} \\
+x_{5} \\
+x_{6} \\
+\end{array}\right]
+$$
+
+Vector f:
+
+$$\mathbf{f} = \left[\begin{array}
+{rrr}
+f_{1} \\
+f_{2} \\
+f_{3} \\
+f_{4} \\
+f_{5} \\
+f_{6} \\
+\end{array}\right]
+$$
+
+Matrix Z:
+
+$$\mathbf{Z} = \left[\begin{array}
+{rrr}
+z_{11} & z_{12} & z_{13} & z_{14} & z_{15} & z_{16} \\
+z_{21} & z_{22} & z_{23} & z_{24} & z_{25} & z_{26} \\
+z_{31} & z_{32} & z_{33} & z_{34} & z_{35} & z_{36} \\
+z_{41} & z_{42} & z_{43} & z_{44} & z_{45} & z_{46} \\
+z_{51} & z_{52} & z_{53} & z_{54} & z_{55} & z_{56} \\
+z_{61} & z_{62} & z_{63} & z_{64} & z_{65} & z_{66} \\
+\end{array}\right]
+$$
+
+### 3.2 Column space expansion of Leontief I-O total output vector x:
+
+Equation:
+
+$$
+\begin{align}
     O = Z\hat{f} && \text{(f-hat is a diagonal matrix of final demands; O is the column space of x)}\\
 \end{align}$$
 
-Matrix O: $$\mathbf{O} = \left[\begin{array}
+Where: Vector f-hat:
+
+$$\mathbf {f} = \left[\begin{array}
+{rrr}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4} \\
+x_{5} \\
+x_{6} \\
+\end{array}\right]
+$$
+
+Vector f:
+
+$$\mathbf{f} = \left[\begin{array}
+{rrr}
+f_{11} & 0 & 0 & 0 & 0 & 0 \\
+0 & f_{22} & 0 & 0 & 0 & 0 \\
+0 & 0 & f_{33} & 0 & 0 & 0 \\
+0 & 0 & 0 & f_{44} & 0 & 0 \\
+0 & 0 & 0 & 0 & f_{55} & 0 \\
+0 & 0 & 0 & 0 & 0 & f_{66} \\
+\end{array}\right]
+$$
+
+Matrix Z:
+
+$$\mathbf{Z} = \left[\begin{array}
+{rrr}
+z_{11} & z_{12} & z_{13} & z_{14} & z_{15} & z_{16} \\
+z_{21} & z_{22} & z_{23} & z_{24} & z_{25} & z_{26} \\
+z_{31} & z_{32} & z_{33} & z_{34} & z_{35} & z_{36} \\
+z_{41} & z_{42} & z_{43} & z_{44} & z_{45} & z_{46} \\
+z_{51} & z_{52} & z_{53} & z_{54} & z_{55} & z_{56} \\
+z_{61} & z_{62} & z_{63} & z_{64} & z_{65} & z_{66} \\
+\end{array}\right]
+$$
+
+Column-space expansion Matrix O:
+
+$$\mathbf{O} = \left[\begin{array}
 {rrr}
 o_{11} & o_{12} & o_{13} & o_{14} & o_{15} & o_{16} \\
 o_{21} & o_{22} & o_{23} & o_{24} & o_{25} & o_{26} \\
@@ -132,11 +221,22 @@ o_{61} & o_{62} & o_{63} & o_{64} & o_{65} & o_{66} \\
 \end{array}\right]
 $$
 
-### 3.1 Column Space Expansion of Total Output Vector o~5~
+### 3.3 Supply Chain Tier 1 Column Space Expansion of Total Output of Vector o~5~
 
-Vector o~5~:
+***SECTION 3.3 TBD!!!!***
 
-$$\mathbf{o} = \left[\begin{array}
+Column space expansion of output vector o~5~:
+
+$$
+\begin{align}
+    o = Zf && \text{(Leontief transformation function)}\\
+    O = Z\hat{f} && \text{(f-hat is a diagonal matrix of intermediate demands by Biopwr; O is the column space of o)}\\
+\end{align}
+$$
+
+(Product Electricity from Biomass Power Generation) Vector o~5~:
+
+$$\mathbf{o_5} = \left[\begin{array}
 {rrr}
 o_{15} \\
 o_{25} \\
@@ -156,7 +256,9 @@ $$
 \end{align}
 $$
 
-Matrix O: $$\mathbf{O} = \left[\begin{array}
+Matrix O:
+
+$$\mathbf{O} = \left[\begin{array}
 {rrr}
 o_{11} & o_{12} & o_{13} & o_{14} & o_{15} & o_{16} \\
 o_{21} & o_{22} & o_{23} & o_{24} & o_{25} & o_{26} \\
@@ -166,3 +268,17 @@ o_{51} & o_{52} & o_{53} & o_{54} & o_{55} & o_{56} \\
 o_{61} & o_{62} & o_{63} & o_{64} & o_{65} & o_{66} \\
 \end{array}\right]
 $$
+
+### 3.4 Supply Chain Tier 2 Column Space Expansion of Total Output of Vector o~4~
+
+### 3.5 Supply Chain Tier 3 Column Space Expansion of Total Output of Vector o~3~
+
+### 3.6 Supply Chain Tier 4 Column Space Expansion of Total Output of Vector o~2~
+
+## 4. Supply Chain Visualization
+
+### 4.1 Assemble a Supply Chain Knowlegebase
+
+### 4.2 Query Knowlegebase for Supply Chain Pattern
+
+### 4.3 Visualization of Supply Chain
