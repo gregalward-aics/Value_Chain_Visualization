@@ -1,0 +1,361 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\setcounter{secnumdepth}{5}
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[many]{tcolorbox}}
+\makeatother
+\makeatletter
+\@ifundefined{shadecolor}{\definecolor{shadecolor}{rgb}{.97, .97, .97}}
+\makeatother
+\makeatletter
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Value\_Chain\_Visualization},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Value\_Chain\_Visualization}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[borderline west={3pt}{0pt}{shadecolor}, frame hidden, sharp corners, breakable, interior hidden, boxrule=0pt, enhanced]}{\end{tcolorbox}}\fi
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\hypertarget{purpose-and-objective}{%
+\section{Purpose and Objective}\label{purpose-and-objective}}
+
+Resource-Product Value chain analysis and visualization using I-O
+accounts as a data source.
+
+\hypertarget{national-income-and-product-accounts}{%
+\subsection{1. National Income and Product
+Accounts}\label{national-income-and-product-accounts}}
+
+National Income and Product identities: \[
+\begin{align}
+  v = c+i+g+(e-m)   && \text{(National Income = National Product)}\\
+  m+v = c+i+g+e     && \text{(GNI + imports = GNP)}\\
+  m+v = f     && \text{(GNP = Total Final Demand = f)}\\
+\end{align}
+\]
+
+Add Intermediate output variable: \[
+\begin{align}
+  m+v = x+f     && \text{(x=intermediate output; (x+f) and (m+v)= total output)}\\
+\end{align}
+\]
+
+\hypertarget{i-o-accounts}{%
+\subsection{2. I-O Accounts}\label{i-o-accounts}}
+
+\hypertarget{total-output-total-outlay}{%
+\subsubsection{2.1 Total output = total
+outlay:}\label{total-output-total-outlay}}
+
+\[
+\begin{align}
+    X + f = x && \text{(Intermediate Demand + Final Demand = Total Output)}\\
+    V + M = q && \text{(Value Added + Imports = Total Outlay)}\\
+\end{align}
+\]
+
+\hypertarget{direct-input-coefficients}{%
+\subsubsection{2,2 Direct input
+coefficients}\label{direct-input-coefficients}}
+
+\[
+\begin{align}
+    \hat{q}^{-1}X = _{i}A && \text{(Inter-industry Direct Input Coefficients matrix iA)}\\
+    \hat{q}^{-1}V = _{v}A && \text{(Value Added Direct Input Coefficients matrix vA)}\\
+    \hat{q}^{-1}M = _{m}A && \text{(Import Direct Input Coefficients matrix mA)}\\
+\end{align}
+\]
+
+\hypertarget{inter-industry-adjacency-matrix}{%
+\subsubsection{2.3 Inter-Industry Adjacency
+Matrix}\label{inter-industry-adjacency-matrix}}
+
+Derive adjacency matrix \textbf{\emph{B}} from the
+\textsubscript{i}\textbf{\emph{A}} matrix. Successive powers of
+\textbf{\emph{B\textsuperscript{n}}} will identify successive paths of
+step-length \textbf{\emph{n}}. Assume industry \textbf{\emph{1}} is
+\emph{Grow}, industry \textbf{\emph{2}} is \emph{Harvest}, industry
+\textbf{\emph{3}} is \emph{Saw Mill}, industry \textbf{\emph{4}} is
+\emph{Residuals}, industry \textbf{\emph{5}} is \emph{Bio-Power}, and
+industry \textbf{\emph{6}} is \emph{Other}. Assume the commodity
+produced by industry \textbf{\emph{1}} is \emph{Stumpage}
+(\emph{m\textsuperscript{3}} of solid wood), the commodity produced by
+industry \textbf{\emph{2}} is \emph{Logs} (containing
+\emph{m\textsuperscript{3}} of solid wood), the commodity produced by
+industry \textbf{\emph{3}} is \emph{Dimension Lumber} (containing
+\emph{m\textsuperscript{3}} of solid wood), the commodity produced by
+industry \textbf{\emph{4}} is \emph{Sawdust Residuals} (containing
+\emph{m\textsuperscript{3}} of solid wood), the commodity produced by
+industry \textbf{\emph{5}} is \emph{Electricity} (generated by using
+\emph{m\textsuperscript{3}} of solid wood \emph{Sawdust Residuals} as
+fuel), and commodity produced by industry \textbf{\emph{6}} is
+\emph{Other}.
+
+Matrix \textsubscript{i}A:
+
+\[\mathbf{A} = \left[\begin{array}
+{rrr}
+a_{11} & a_{12} & a_{13} & a_{14} & a_{15} & a_{16} \\
+a_{21} & a_{22} & a_{23} & a_{24} & a_{25} & a_{26} \\
+a_{31} & a_{32} & a_{33} & a_{34} & a_{35} & a_{36} \\
+a_{41} & a_{42} & a_{43} & a_{44} & a_{45} & a_{46} \\
+a_{51} & a_{52} & a_{53} & a_{54} & a_{55} & a_{56} \\
+a_{61} & a_{62} & a_{63} & a_{64} & a_{65} & a_{66} \\
+\end{array}\right]
+\]
+
+Matrix \textsubscript{i}A non-zero elements:
+
+\[\mathbf{A} = \left[\begin{array}
+{rrr}
+a_{11} & a_{12} & 0 & 0 & 0 & 0 \\
+0 & a_{22} & a_{23} & 0 & 0 & 0 \\
+0 & 0 & a_{33} & a_{34} & 0 & 0 \\
+0 & 0 & 0 & a_{44} & a_{45} & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+\end{array}\right]
+\]
+
+Adjacency Matrix B\textsuperscript{1}:
+
+\[\mathbf{B} = \left[\begin{array}
+{rrr}
+1 & 1 & 0 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+\end{array}\right]
+\]
+
+Adjacency Matrix B\textsuperscript{4}:
+
+\[\mathbf{B} = \left[\begin{array}
+{rrr}
+1 & 4 & 6 & 4 & 1 & 0 \\
+0 & 1 & 4 & 5 & 2 & 0 \\
+0 & 0 & 1 & 2 & 1 & 0 \\
+0 & 0 & 0 & 1 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 0 \\
+\end{array}\right]
+\]
+
+\hypertarget{leontief-i-o-accounts}{%
+\subsection{3 Leontief I-O Accounts:}\label{leontief-i-o-accounts}}
+
+\[
+\begin{align}
+    _{i}Ax+f=x && \text{(Substitute iA Direct Interindustry Input Coefficients matrix)}\\
+        f=(I-_{i}A)x && \text{(Rearrange)}\\
+    x = (I-_{i}A)^{-1}f && \text{(Leontief I-O Accounts transformation)}\\
+    x = Zf && \text{(Z relates industry input vectors to final products)}\\
+\end{align}
+\]
+
+\hypertarget{column-space-expansion-of-total-output-vector}{%
+\subsubsection{3.1 Column Space Expansion of Total Output
+Vector}\label{column-space-expansion-of-total-output-vector}}
+
+Column space expansion of total output vector x:
+
+\[
+\begin{align}
+    x = Zf && \text{(Leontief transformation function)}\\
+    O = Z\hat{f} && \text{(f-hat is a diagonal matrix of final demands; O is the column space of x)}\\
+\end{align}\]
+
+Matrix O: \[\mathbf{O} = \left[\begin{array}
+{rrr}
+o_{11} & o_{12} & o_{13} & o_{14} & o_{15} & o_{16} \\
+o_{21} & o_{22} & o_{23} & o_{24} & o_{25} & o_{26} \\
+o_{31} & o_{32} & o_{33} & o_{34} & o_{35} & o_{36} \\
+o_{41} & o_{42} & o_{43} & o_{44} & o_{45} & o_{46} \\
+o_{51} & o_{52} & o_{53} & o_{54} & o_{55} & o_{56} \\
+o_{61} & o_{62} & o_{63} & o_{64} & o_{65} & o_{66} \\
+\end{array}\right]
+\]
+
+\hypertarget{column-space-expansion-of-total-output-vector-o5}{%
+\subsubsection{\texorpdfstring{3.1 Column Space Expansion of Total
+Output Vector
+o\textsubscript{5}}{3.1 Column Space Expansion of Total Output Vector o5}}\label{column-space-expansion-of-total-output-vector-o5}}
+
+Vector o\textsubscript{5}:
+
+\[\mathbf{o} = \left[\begin{array}
+{rrr}
+o_{15} \\
+o_{25} \\
+o_{35} \\
+o_{45} \\
+o_{55} \\
+o_{65} \\
+\end{array}\right]
+\]
+
+Column space expansion of output vector o\textsubscript{5}:
+
+\[
+\begin{align}
+    o = Zf && \text{(Leontief transformation function)}\\
+    O = Z\hat{f} && \text{(f-hat is a diagonal matrix of intermediate demands by Biopwr; O is the column space of o)}\\
+\end{align}
+\]
+
+Matrix O: \[\mathbf{O} = \left[\begin{array}
+{rrr}
+o_{11} & o_{12} & o_{13} & o_{14} & o_{15} & o_{16} \\
+o_{21} & o_{22} & o_{23} & o_{24} & o_{25} & o_{26} \\
+o_{31} & o_{32} & o_{33} & o_{34} & o_{35} & o_{36} \\
+o_{41} & o_{42} & o_{43} & o_{44} & o_{45} & o_{46} \\
+o_{51} & o_{52} & o_{53} & o_{54} & o_{55} & o_{56} \\
+o_{61} & o_{62} & o_{63} & o_{64} & o_{65} & o_{66} \\
+\end{array}\right]
+\]
+
+
+
+\end{document}
