@@ -56,9 +56,9 @@ $$
 \end{align}
 $$
 
-Total Industry Outlay Vector $[q]$:
+Total Industry Outlay Vector $[q]_{1\times 6}$:
 
-$$\mathbf{[q]} = \left[\begin{array}
+$$\mathbf{[q]_{1\times 6}} = \left[\begin{array}
 {rrr}
 q_{1} \\
 q_{2} \\
@@ -69,9 +69,9 @@ q_{6} \\
 \end{array}\right]
 $$
 
-Total Outlay Inverse (Reciprocals) Matrix $[\hat{q}^{-1}]$:
+Total Outlay Inverse (Reciprocals) Matrix $[\hat{q}^{-1}]_{6\times 6}$:
 
-$$\mathbf {[\hat{q}^{-1}]} = \left[\begin{array}
+$$\mathbf {[\hat{q}^{-1}]_{6\times 6}} = \left[\begin{array}
 {rrr}
 (\frac{1} q_{1}) & 0 & 0 & 0 & 0 & 0 \\
 0 & (\frac{1} q_{2}) & 0 & 0 & 0 & 0 \\
@@ -84,9 +84,15 @@ $$
 
 #### 2.2.1 Inter-industry Direct Coefficients
 
-Inter-industry Transactions Matrix $[X]$:
+$$
+\begin{align}
+    \hat{q}^{-1}X = _{i}A && \text{(Inter-industry Direct Input Coefficients matrix iA) (3)}\\
+\end{align}
+$$
 
-$$\mathbf{[X]} = \left[\begin{array}
+Inter-industry Transactions Matrix $[X]_{6\times 6}$:
+
+$$\mathbf{[X]_{6\times 6}} = \left[\begin{array}
 {rrr}
 x_{11} & x_{12} & x_{13} & x_{14} & x_{15} & x_{16} \\
 x_{21} & x_{22} & x_{23} & x_{24} & x_{25} & x_{26} \\
@@ -97,9 +103,9 @@ x_{61} & x_{62} & x_{63} & x_{64} & x_{65} & x_{66} \\
 \end{array}\right]
 $$
 
-Inter-Industry Explicit Computation of Direct Coefficients Matrix $[\hat{q}^{-1}X]=[_{i}A]$:
+Inter-Industry Explicit Computation of Direct Coefficients Matrix $[\hat{q}^{-1}X]_{6\times 6}=[_{i}A]_{6\times 6}$:
 
-$$\mathbf{[\hat{q}^{-1}X]=[_{i}A]} = \left[\begin{array}
+$$\mathbf{[\hat{q}^{-1}X]_{6\times 6}=[_{i}A]_{6\times 6}} = \left[\begin{array}
 {rrr}
 ((\frac{1} q_{1})*x_{11})=_{i}a_{11} & ((\frac{1} q_{1})*x_{12})=_{i}a_{12} & ((\frac{1} q_{1})*x_{13})=_{i}a_{13} & ((\frac{1} q_{1})*x_{13})=_{i}a_{14} & ((\frac{1} q_{1})*x_{15})=_{i}a_{15} & ((\frac{1} q_{1})*x_{16})=a_{16} \\
 ((\frac{1} q_{2})*x_{21})=_{i}a_{21} & ((\frac{1} q_{2})*x_{22})=_{i}a_{22} & ((\frac{1} q_{2})*x_{23})=_{i}a_{23} & ((\frac{1} q_{2})*x_{23})=_{i}a_{24} & ((\frac{1} q_{2})*x_{25})=_{i}a_{25} & ((\frac{1} q_{2})*x_{26})=a_{26} \\
@@ -110,9 +116,9 @@ $$\mathbf{[\hat{q}^{-1}X]=[_{i}A]} = \left[\begin{array}
 \end{array}\right]
 $$
 
-Inter-Industry Direct Coefficients Matrix $[_{i}A]$:
+Inter-Industry Direct Coefficients Matrix $[_{i}A]_{6\times 6}$:
 
-$$\mathbf{[_{i}A]} = \left[\begin{array}
+$$\mathbf{[_{i}A]_{6\times 6}} = \left[\begin{array}
 {rrr}
 _{i}a_{11} & _{i}a_{12} & _{i}a_{13} & _{i}a_{14} & _{i}a_{15} & a_{16} \\
 _{i}a_{21} & _{i}a_{22} & _{i}a_{23} & _{i}a_{24} & _{i}a_{25} & a_{26} \\
@@ -125,9 +131,15 @@ $$
 
 #### 2.2.2 Total Value Added Direct Coefficients
 
-Total Value Added Matrix $[V]$:
+$$
+\begin{align}
+    \hat{q}^{-1}V = _{v}A && \text{(Value Added Direct Input Coefficients matrix vA) (4)}\\
+\end{align}
+$$
 
-$$\mathbf {[V]} = \left[\begin{array}
+Total Value Added Matrix $[V]_{6\times 6}$:
+
+$$\mathbf {[V]_{6\times 6}} = \left[\begin{array}
 {rrr}
 v_{11} & 0 & 0 & 0 & 0 & 0 \\
 0 & v_{22} & 0 & 0 & 0 & 0 \\
@@ -138,9 +150,9 @@ v_{11} & 0 & 0 & 0 & 0 & 0 \\
 \end{array}\right]
 $$
 
-Explicit Computation of Total Value Added Direct Coefficients Matrix $[\hat{q}^{-1}v]=[_{v}A]$:
+Explicit Computation of Total Value Added Direct Coefficients Matrix $[\hat{q}^{-1}v]_{6\times 6}=[_{v}A]_{6\times 6}$:
 
-$$\mathbf{[\hat{q}^{-1}V]=[_{v}A]} = \left[\begin{array}
+$$\mathbf{[\hat{q}^{-1}V]_{6\times 6}=[_{v}A]_{6\times 6}} = \left[\begin{array}
 {rrr}
 ((\frac{1} q_{1})*v_{11})=_{v}a_{11} & 0 & 0 & 0 & 0 & 0 \\
 0 & ((\frac{1} q_{2})*v_{22})=_{v}a_{22} & 0 & 0 & 0 & 0 \\
@@ -151,9 +163,9 @@ $$\mathbf{[\hat{q}^{-1}V]=[_{v}A]} = \left[\begin{array}
 \end{array}\right]
 $$
 
-Total Value Added Direct Coefficients Matrix $[_{v}A]$:
+Total Value Added Direct Coefficients Matrix $[_{v}A]_{6\times 6}$:
 
-$$\mathbf{[_{v}A]} = \left[\begin{array}
+$$\mathbf{[_{v}A]_{6\times 6}} = \left[\begin{array}
 {rrr}
 _{v}a_{11} &0 & 0 & 0 & 0 & 0 \\
 0 & _{v}a_{22} & 0 & 0 & 0 & 0 \\
@@ -166,9 +178,15 @@ $$
 
 #### 2.2.3 Total Imports Direct Coefficients
 
-Total Imports Matrix $[M]$:
+$$
+\begin{align}
+    \hat{q}^{-1}M = _{m}A && \text{(Import Direct Input Coefficients matrix mA) (5)}\\
+\end{align}
+$$
 
-$$\mathbf {[M]} = \left[\begin{array}
+Total Imports Matrix $[M]_{6\times 6}$:
+
+$$\mathbf {[M]_{6\times 6}} = \left[\begin{array}
 {rrr}
 m_{11} & 0 & 0 & 0 & 0 & 0 \\
 0 & m_{22} & 0 & 0 & 0 & 0 \\
@@ -179,9 +197,9 @@ m_{11} & 0 & 0 & 0 & 0 & 0 \\
 \end{array}\right]
 $$
 
-Explicit Computation of Total Imports Direct Coefficients Matrix $[\hat{q}^{-1}M]=[_{m}A]$:
+Explicit Computation of Total Imports Direct Coefficients Matrix $[\hat{q}^{-1}M]_{6\times 6}=[_{m}A]_{6\times 6}$:
 
-$$\mathbf{[\hat{q}^{-1}M]=[_{m}A]} = \left[\begin{array}
+$$\mathbf{[\hat{q}^{-1}M]_{6\times 6}=[_{m}A]_{6\times 6}} = \left[\begin{array}
 {rrr}
 ((\frac{1} q_{1})*m_{11})=_{m}a_{11} & 0 & 0 & 0 & 0 & 0 \\
 0 & ((\frac{1} q_{2})*m_{22})=_{m}a_{22} & 0 & 0 & 0 & 0 \\
@@ -192,9 +210,9 @@ $$\mathbf{[\hat{q}^{-1}M]=[_{m}A]} = \left[\begin{array}
 \end{array}\right]
 $$
 
-Total Value Added Direct Coefficients Matrix $[_{m}A]$:
+Total Value Added Direct Coefficients Matrix $[_{m}A]_{6\times 6}$:
 
-$$\mathbf{[_{m}A]} = \left[\begin{array}
+$$\mathbf{[_{m}A]_{6\times 6}} = \left[\begin{array}
 {rrr}
 _{m}a_{11} &0 & 0 & 0 & 0 & 0 \\
 0 & _{m}a_{22} & 0 & 0 & 0 & 0 \\
@@ -205,9 +223,9 @@ _{m}a_{11} &0 & 0 & 0 & 0 & 0 \\
 \end{array}\right]
 $$
 
-Direct Coefficients Matrix $\hat{q}^{-1}X=_{i}A$:
+Direct Coefficients Matrix $[\hat{q}^{-1}X]_{6\times 6}=[_{i}A]_{6\times 6}$:
 
-$$\mathbf{\hat{q}^{-1}X=_{i}A} = \left[\begin{array}
+$$\mathbf{[\hat{q}^{-1}X]_{6\times 6}=[_{i}A]_{6\times 6}} = \left[\begin{array}
 {rrr}
 ((\frac{1} q_{1})*x_{11})=_{i}a_{11} & ((\frac{1} q_{1})*x_{12})=_{i}a_{12} & ((\frac{1} q_{1})*x_{13})=_{i}a_{13} & ((\frac{1} q_{1})*x_{13})=_{i}a_{14} & ((\frac{1} q_{1})*x_{15})=_{i}a_{15} & ((\frac{1} q_{1})*x_{16})=a_{16} \\
 ((\frac{1} q_{2})*x_{21})=_{i}a_{21} & ((\frac{1} q_{2})*x_{22})=_{i}a_{22} & ((\frac{1} q_{2})*x_{23})=_{i}a_{23} & ((\frac{1} q_{2})*x_{23})=_{i}a_{24} & ((\frac{1} q_{2})*x_{25})=_{i}a_{25} & ((\frac{1} q_{2})*x_{26})=a_{26} \\
@@ -222,17 +240,17 @@ $$
 
 ### 3.1 Identifying an RPVC Path in an Adjacency Matrix
 
-The ~i~***A*** matrix is commonly referred to as the *Direct Coefficients* matrix. The term *Direct* refers to the *one-step* relationships between an industry activity and its input suppliers. That is, each industry activity is one transaction (i.e., *one step*) removed from each of its suppliers. In aggregate, each industry activity and its suppliers have a *one-to-many* relationship (i.e., one activity has many suppliers) and this *one-to-many* relationship is represented by a column vector in the ~i~***A*** matrix.
+The $[_{i}A]$ matrix is commonly referred to as the *Direct Coefficients* matrix. The term *Direct* refers to the *one-step* relationships between an industry activity and its input suppliers. That is, each industry activity is one transaction (i.e., *one step*) removed from each of its suppliers. In aggregate, each industry activity and its suppliers have a *one-to-many* relationship (i.e., one activity has many suppliers). Each activity's column vector in the $[_{i}A]$ matrix describes that activity's *one-to-many* relationships with its input suppliers.
 
-An *Adjacency Matrix* derived from the ~i~***A*** matrix can be used to determine the number of one-step relationships (i.e., transactions) between any pair of purchasing and suppling activities. In other words, an *Adjacency Matrix* can reveal the path and distance (number of steps) between an origin activity and a destination activity (i.e., an RPVC).
+An *Adjacency Matrix* derived from the $[_{i}A]$ matrix can be used to determine the number of one-step relationships (i.e., transactions) between any pair of purchasing and suppling activities. In other words, an *Adjacency Matrix* can reveal the path and distance (number of steps) between an origin activity and a destination activity (i.e., an RPVC).
 
-Derive adjacency matrix ***B*** from the ~i~***A*** matrix. Successive powers of ***B^n^*** will identify successive paths of step-length ***n***.
+Derive adjacency matrix $[B]$ from the $[_{i}A]$ matrix. Successive powers of $[B^{n}]$ will identify successive paths of step-length ***n***.
 
-To illustrate an adjacency matrix, consider a portion of an ~i~***A*** matrix with only wood-related activities. Assume industry ***1*** is *Grow*, industry ***2*** is *Harvest*, industry ***3*** is *Saw Mill*, industry ***4*** is *Residuals*, industry ***5*** is *Bio-Power*, and industry ***6*** is *Other*. Assume the commodity produced by industry ***1*** is *Stumpage* (*m^3^* of solid wood), the commodity produced by industry ***2*** is *Logs* (containing *m^3^* of solid wood), the commodity produced by industry ***3*** is *Dimension Lumber* (containing *m^3^* of solid wood), the commodity produced by industry ***4*** is *Sawdust Residuals* (containing *m^3^* of solid wood), the commodity produced by industry ***5*** is *Electricity* (generated by using *m^3^* of solid wood *Sawdust Residuals* as fuel), and commodity produced by industry ***6*** is *Other*.
+To illustrate an adjacency matrix, consider a portion of an $[_{i}A]$ matrix with only wood-related activities. Assume industry ***1*** is *Grow*, industry ***2*** is *Harvest*, industry ***3*** is *Saw Mill*, industry ***4*** is *Residuals*, industry ***5*** is *Bio-Power*, and industry ***6*** is *Other*. Assume the commodity produced by industry ***1*** is *Stumpage* (*m^3^* of solid wood), the commodity produced by industry ***2*** is *Logs* (containing *m^3^* of solid wood), the commodity produced by industry ***3*** is *Dimension Lumber* (containing *m^3^* of solid wood), the commodity produced by industry ***4*** is *Sawdust Residuals* (containing *m^3^* of solid wood), the commodity produced by industry ***5*** is *Electricity* (generated by using *m^3^* of solid wood *Sawdust Residuals* as fuel), and commodity produced by industry ***6*** is *Other*.
 
-The Inter-industry Direct Coefficients Matrix $[_{i}A]$:
+The Inter-industry Direct Coefficients Matrix $[_{i}A]_{6\times 6}$:
 
-$$\mathbf{[_{i}A]} = \left[\begin{array}
+$$\mathbf{[_{i}A]_{6\times 6}} = \left[\begin{array}
 {rrr}
 _{i}a_{11} & _{i}a_{12} & _{i}a_{13} & _{i}a_{14} & _{i}a_{15} & _{i}a_{16} \\
 _{i}a_{21} & _{i}a_{22} & _{i}a_{23} & _{i}a_{24} & _{i}a_{25} & _{i}a_{26} \\
@@ -243,9 +261,9 @@ _{i}a_{61} & _{i}a_{62} & _{i}a_{63} & _{i}a_{64} & _{i}a_{65} & _{i}a_{66} \\
 \end{array}\right]
 $$
 
-Inter-industry Direct Coefficients Matrix $[_{i}A]$ where $_{i}a_{nn}\neq{0}$:
+Inter-industry Direct Coefficients Matrix $[_{i}A]_{6\times 6}$ where $_{i}a_{nn}\neq{0}$:
 
-$$\mathbf{[_{i}A]} = \left[\begin{array}
+$$\mathbf{[_{i}A]_{6\times 6}} = \left[\begin{array}
 {rrr}
 _{i}a_{11} & _{i}a_{12} & 0 & 0 & 0 & 0 \\
 0 & _{i}a_{22} & _{i}a_{23} & 0 & 0 & 0 \\
@@ -256,9 +274,9 @@ _{i}a_{11} & _{i}a_{12} & 0 & 0 & 0 & 0 \\
 \end{array}\right]
 $$
 
-Adjacency matrix $[B^{1}]$ (no 1-step path between Activity 5 and Activity 1 indicated by $_{1}b_{15}=0$):
+Adjacency matrix $[B^{1}_{6\times 6}]$ (no 1-step path between Activity 5 and Activity 1 indicated by $b^{1}_{15}=0$):
 
-$$\mathbf{[B^{1}]} = \left[\begin{array}
+$$\mathbf{[B^{1}]_{6\times 6}} = \left[\begin{array}
 {rrr}
 1 & 1 & 0 & 0 & 0 & 0 \\
 0 & 1 & 1 & 0 & 0 & 0 \\
@@ -269,9 +287,9 @@ $$\mathbf{[B^{1}]} = \left[\begin{array}
 \end{array}\right]
 $$
 
-Adjacency Matrix $[B^{2}]$ (no 2-step path between Activity 5 and Activity 1 indicated by $_{2}b_{15}=0$):
+Adjacency Matrix $[B^{2}_{6\times 6}]$ (no 2-step path between Activity 5 and Activity 1 indicated by $b^{2}_{15}=0$):
 
-$$\mathbf{[B^{2}]} = \left[\begin{array}
+$$\mathbf{[B^{2}]_{6\times 6}} = \left[\begin{array}
 {rrr}
 1 & 2 & 1 & 0 & 0 & 0 \\
 0 & 1 & 2 & 1 & 0 & 0 \\
@@ -282,9 +300,9 @@ $$\mathbf{[B^{2}]} = \left[\begin{array}
 \end{array}\right]
 $$
 
-Adjacency Matrix $[B^{3}]$ (no 3-step path between Activity 5 and Activity 1 indicated by $_{3}b_{15}=0$):
+Adjacency Matrix $[B^{3}_{6\times 6}]$ (no 3-step path between Activity 5 and Activity 1 indicated by $b^{3}_{15}=0$):
 
-$$\mathbf{[B^{3}]} = \left[\begin{array}
+$$\mathbf{[B^{3}]_{6\times 6}} = \left[\begin{array}
 {rrr}
 1 & 3 & 3 & 1 & 0 & 0 \\
 0 & 1 & 3 & 3 & 1 & 0 \\
@@ -295,9 +313,9 @@ $$\mathbf{[B^{3}]} = \left[\begin{array}
 \end{array}\right]
 $$
 
-Adjacency Matrix $[B^{4}]$ (one 4-step path between Activity 5 and Activity 1 indicated by $_{4}b_{15}=1$):
+Adjacency Matrix $[B^{4}_{6\times 6}]$ (one 4-step path between Activity 5 and Activity 1 indicated by $b^{4}_{15}=1$):
 
-$$\mathbf{[B^{4}]} = \left[\begin{array}
+$$\mathbf{[B^{4}]_{6\times 6}} = \left[\begin{array}
 {rrr}
 1 & 4 & 6 & 4 & 1 & 0 \\
 0 & 1 & 4 & 5 & 2 & 0 \\
@@ -334,6 +352,8 @@ f)  SEMANTIC TRANSACTION CHAIN: (Industry 1) \> ("Interacts with") \> (Transacti
 
 #### 3.2.2 Visualization of a Path in a Graph
 
+TBD
+
 ## 4. Leontief Form I-O Accounts:
 
 *Leontief-Form* I-O accounts map multi-sector inputs to multi-sector output. This is achieved by deriving a multi-sector transformation matrix to transform the *Core Form* I-O accounts into the *Leontief-Form* I-O accounts. The transformation from *Core Form* to *Netput Form* to *Leontief Form* I-O accounts (including the derivation of a "multiplier matrix") is derived algebraically as follows:
@@ -362,9 +382,9 @@ $$
 \end{align}
 $$
 
-Total Output vector $[x]$:
+Total Output vector $[x]_{1\times 6}$:
 
-$$\mathbf{[x]} = \left[\begin{array}
+$$\mathbf{[x]_{1\times 6}} = \left[\begin{array}
 {rrr}
 x_{1} \\
 x_{2} \\
@@ -375,9 +395,9 @@ x_{6} \\
 \end{array}\right]
 $$
 
-Total Final Demand Vector $[f]$:
+Total Final Demand Vector $[f]_{1\times 6}$:
 
-$$\mathbf{[f]} = \left[\begin{array}
+$$\mathbf{[f]_{1\times 6}} = \left[\begin{array}
 {rrr}
 f_{1} \\
 f_{2} \\
@@ -388,9 +408,9 @@ f_{6} \\
 \end{array}\right]
 $$
 
-Leontief Multiplier Matrix $[Z]$:
+Leontief Multiplier Matrix $[Z]_{6\times 6}$:
 
-$$\mathbf{[Z]} = \left[\begin{array}
+$$\mathbf{[Z]_{6\times 6}} = \left[\begin{array}
 {rrr}
 z_{11} & z_{12} & z_{13} & z_{14} & z_{15} & z_{16} \\
 z_{21} & z_{22} & z_{23} & z_{24} & z_{25} & z_{26} \\
@@ -413,9 +433,9 @@ $$
 \end{align}
 $$
 
-Total Value Added vector $[v]$:
+Total Value Added vector $[v]_{1\times 6}$:
 
-$$\mathbf{[v]} = \left[\begin{array}
+$$\mathbf{[v]_{1\times 6}} = \left[\begin{array}
 {rrr}
 v_{1} \\
 v_{2} \\
@@ -426,9 +446,9 @@ v_{6} \\
 \end{array}\right]
 $$
 
-Total Value Added Direct Coefficients matrix $\widehat{_{v}A}$:
+Total Value Added Direct Coefficients matrix $[\widehat{_{v}A}]_{6\times 6}$:
 
-$$\mathbf {\widehat{_{v}A}} = \left[\begin{array}
+$$\mathbf {[\widehat{_{v}A}]_{6\times 6}} = \left[\begin{array}
 {rrr}
 _{v}a_{11} & 0 & 0 & 0 & 0 & 0 \\
 0 & _{v}a_{22} & 0 & 0 & 0 & 0 \\
@@ -439,9 +459,9 @@ _{v}a_{11} & 0 & 0 & 0 & 0 & 0 \\
 \end{array}\right]
 $$
 
-Total Final Demand Vector $[f]$:
+Total Final Demand Vector $[f]_{1\times 6}$:
 
-$$\mathbf{[f]} = \left[\begin{array}
+$$\mathbf{[f]_{1\times 6}} = \left[\begin{array}
 {rrr}
 f_{1} \\
 f_{2} \\
@@ -452,9 +472,9 @@ f_{6} \\
 \end{array}\right]
 $$
 
-Leontief Form Multiplier Matrix $[Z]$:
+Leontief Form Multiplier Matrix $[Z]_{6\times 6}$:
 
-$$\mathbf{[Z]} = \left[\begin{array}
+$$\mathbf{[Z]_{6\times 6}} = \left[\begin{array}
 {rrr}
 z_{11} & z_{12} & z_{13} & z_{14} & z_{15} & z_{16} \\
 z_{21} & z_{22} & z_{23} & z_{24} & z_{25} & z_{26} \\
@@ -465,9 +485,9 @@ z_{61} & z_{62} & z_{63} & z_{64} & z_{65} & z_{66} \\
 \end{array}\right]
 $$
 
-Intermediate product matrix $[\widehat{_{v}A}Z]$:
+Intermediate product matrix $[\widehat{_{v}A}Z]_{6\times 6}$:
 
-$$\mathbf{[\widehat{_{v}A}Z]} = \left[\begin{array}
+$$\mathbf{[\widehat{_{v}A}Z]_{6\times 6}} = \left[\begin{array}
 {rrr}
 (_{v}a_{11}*z_{11}) & (_{v}a_{11}*z_{12}) & (_{v}a_{11}*z_{13}) & (_{v}a_{11}*z_{14}) & (_{v}a_{11}*z_{15}) & (_{v}a_{11}*z_{16}) \\
 (_{v}a_{21}*z_{21}) & (_{v}a_{21}*z_{22}) & (_{v}a_{21}*z_{23}) & (_{v}a_{21}*z_{24}) & (_{v}a_{21}*z_{25}) & (_{v}a_{21}*z_{26}) \\
@@ -478,9 +498,9 @@ $$\mathbf{[\widehat{_{v}A}Z]} = \left[\begin{array}
 \end{array}\right]
 $$
 
-Total Value Added vector v in explicit computational form $[v]=[\widehat{_{v}A}Z][f]$:
+Total Value Added vector v in explicit computational form $[v]_{1\times 6}=[[\widehat{_{v}A}Z][f]]_{1\times 6}$:
 
-$$\mathbf{[v]=[\widehat{_{v}A}Z][f]} = \left[\begin{array}
+$$\mathbf{[v]_{1\times 6}=[[\widehat{_{v}A}Z][f]]_{1\times 6}} = \left[\begin{array}
 {rrr}
 ((_{v}a_{11}*z_{11})*f_{1}) & +((_{v}a_{11}*z_{12})*f_{2}) & +((_{v}a_{11}*z_{13})*f_{3}) & +((_{v}a_{11}*z_{14})*f_{4}) & +((_{v}a_{11}*z_{15})*f_{5}) & +((_{v}a_{11}*z_{16})*f_{6}) \\
 ((_{v}a_{21}*z_{21})*f_{1}) & +((_{v}a_{21}*z_{22})*f_{2}) & +((_{v}a_{21}*z_{23})*f_{3}) & +((_{v}a_{21}*z_{24})*f_{4}) & +((_{v}a_{21}*z_{25})*f_{5}) & +((_{v}a_{21}*z_{26})*f_{6}) \\
@@ -501,9 +521,9 @@ $$
     O = Z\hat{f} && \text{($\hat{f}$ is a diagonal matrix of final demands; O is the column space of x)}\\
 \end{align}$$
 
-Where: Vector $\hat{f}$:
+Where: Vector $[\hat{f}]_{1\times 6}$:
 
-$$\mathbf {f} = \left[\begin{array}
+$$\mathbf {[\hat{f}]_{1\times 6}} = \left[\begin{array}
 {rrr}
 x_{1} \\
 x_{2} \\
@@ -626,3 +646,34 @@ $$
 ### 6.2 Query Knowlegebase for Supply Chain Pattern
 
 ### 6.3 Visualization of Supply Chain
+
+$$\begin{align}
+   \begin{bmatrix}
+           W_{11} \\
+           W_{12} \\
+           \vdots \\
+           W_{1n}
+   \end{bmatrix}
+   &+ \begin{bmatrix}
+           W_{21} \\
+           W_{22} \\
+           \vdots \\
+           W_{2n}
+       \end{bmatrix}
+   &+ \dots
+   &+ \begin{bmatrix}
+           W_{n1} \\
+           W_{n2} \\
+           \vdots \\
+           W_{nn}
+       \end{bmatrix}
+   &= \begin{bmatrix}
+           \frac{W_{11} + W_{21} + \dots + W_{n1}}{n} \\
+           \frac{W_{12} + W_{22} + \dots + W_{n2}}{n} \\
+           \vdots \\
+           \frac{W_{1n} + W_{2n} + \dots + W_{nn}}{n}
+    \end{bmatrix}
+\end{align}
+$$
+
+\`\`\`
